@@ -1,0 +1,15 @@
+h1{
+    color: rgb(81, 121, 107);
+}
+#fruits-title{
+    color: black;
+}
+.important-place{
+    color: blueviolet;
+}
+.place-container li{
+    color: rgb(93, 206, 149);
+}
+.dom{
+    text-align: center;
+}

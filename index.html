@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1> Welcome to muy Dom</h1>
+    </header>
+    <main id="main-container">
+        <section id="DOM">
+            <h1> My Awesome DOM </h1>
+            <ul>
+                <li>Lalon</li>
+                <li>Aashes</li>
+                <li>Bay Of Bangle</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title"> Fruits I Like</h1>
+            <ul>
+                <li class="important-place">Apple</ class="inportant-place">
+                <li class="important-place">Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="place-container">
+            <h1>Places I like to visit</h1>
+            <ul id="places-list">
+                <li>Khulna</li>
+                <li>Jessore</li>
+                <li>Bangle</li>
+            </ul>
+        </section>
+    </main>
+    <script src="./js/dom.js"></script>
+    <script src="./js/append.js"></script>
+    <script src="./js/stylebyjs.js"></script>
+    <script>
+        const student = {
+            name:'Abul',
+            Id: 11,
+            study: function (time){
+                // console.log(time, 'study kortasa')
+            }
+        }
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection)
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+        const allHeading = document.getElementsByTagName('h1');
+        for(const h1 of allHeading){
+            // console.log(h1.innerText);
+        }
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits changed by JS';
+        const Places = document.getElementsByClassName('important-place');
+        for(const Place of Places){
+            // console.log(Place);
+        }
+
+        // querySelectorAll
+        const someLi = document.querySelectorAll('.place-container li')
+        // console.log(someLi)
+        for(const li of someLi){
+            // console.log(li.innerText)
+        }
+        const oneLi = document.querySelector('.place-container li')
+        // console.log(someLi)
+    </script>
+</body>
+</html>
